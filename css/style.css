@@ -1,0 +1,145 @@
+:root {
+	--primary-color: hsl(223, 87%, 63%);
+	--secondary-color: hsl(223, 100%, 88%);
+	--red-color: hsl(354, 100%, 66%);
+	--neutral-color: hsl(0, 0%, 59%);
+	--dark-color: hsl(209, 33%, 12%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 20px;
+	font-family: 'Libre Franklin', sans-serif;
+	line-height: 1.4;
+}
+
+h1 {
+	font-size: 2.5rem;
+}
+
+h2 {
+	font-size: 1.4rem;
+	font-weight: 300;
+	margin-top: 1rem;
+}
+
+/* UTILITIES */
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-light {
+	font-weight: 300;
+	color: var(--neutral-color);
+}
+
+
+.shadow-bottom {
+	-webkit-box-shadow: 0 8px 16px -6px var(--secondary-color);
+	-moz-box-shadow: 0 8px 16px -6px var(--secondary-color);
+	box-shadow: 0 8px 16px -6px var(--secondary-color);
+
+}
+
+/* HEADER */
+
+#header-main {
+	padding-top: 2rem;
+}
+
+#header-main .logo {
+	margin-bottom: 2rem;
+}
+
+
+/* FORM */
+.input-email {
+	padding: 20px 25px;
+	border: 1px solid var(--red-color);
+	border-radius: 2rem;
+	width: 320px;
+	height: 30px;
+	margin-top: 2rem;
+}
+
+button {
+	padding: 10px 35px;
+	border: none;
+	background-color: var(--primary-color);
+	color: #fff;
+	border-radius: 25px;
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+	text-decoration: none;
+	margin: 0.25rem;
+	cursor: pointer;
+}
+
+button:hover,
+button:focus {
+	background: var(--secondary-color);
+}
+
+button:focus {
+	outline: 1px solid #fff;
+	outline-offset: -4px;
+}
+
+/* Illustration */
+#image-body .illustration {
+	width: 700px;
+	margin-top: 3rem;
+}
+
+/* Footer */
+
+footer .icons {
+	color: var(--primary-color);
+	font-size: 1.3rem;
+	margin-top: 1rem;
+	margin-bottom: 0.6rem;
+}
+
+footer p {
+	font-size: 0.7rem;
+	font-weight: 300;
+	color: var(--neutral-color);
+}
+
+footer, .attribution, .attribution>a {
+    font-size: 0.7rem;
+    color: hsl(0, 0%, 59%);
+		text-decoration: none;
+}
+
+footer .attribution>a:hover {
+	color: var(--primary-color);
+}
+
+
+
+/* RESPONSIVE STYLES  */
+@media(max-width: 710px) {
+	#image-body .illustration {
+		width: 95%;
+	}
+
+	.input-email {
+		width: 80%;
+		margin-bottom: 10px;
+	}
+
+	h2 {
+		font-size: 1.2rem
+	}
+}
